@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Assignment1</title>
+</head>
+<body id="background" >
+    <script>
+     
+      var i = 0;
+function change() {
+  var doc = document.getElementById("background");
+  var color = ["black", "blue", "brown", "green"];
+  doc.style.backgroundColor = color[i];
+  i = (i + 1) % color.length;
+}
+setInterval(change, 5000);
+   
+    </script>
+    
+</body>
+</html>
